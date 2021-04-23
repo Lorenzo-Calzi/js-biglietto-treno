@@ -28,7 +28,7 @@ document.getElementById('result').innerHTML = 'Il prezzo è ' + ticketPrice.toFi
 
 if (userAge < 18 ) {
     var sconto = (ticketPrice*20)/100;
-    document.getElementById('sconto').innerHTML = 'Al costo del biglietto verrà sotratta la somma di: ' + sconto.toFixed(2) + ' \u20ac';
+    document.getElementById('sconto').innerHTML = 'Con lo sconto del 20% rispami: ' + sconto.toFixed(2) + ' \u20ac';
     console.log(sconto);
     var teenPrice = ticketPrice - sconto;
     document.getElementById('final_price').innerHTML = 'Il costo finale del biglietto è: ' + teenPrice.toFixed(2) + ' \u20ac';
@@ -38,11 +38,11 @@ if (userAge < 18 ) {
 
 } else if (userAge >= 65) {
     var sconto = (ticketPrice*40)/100;
-    document.getElementById('sconto').innerHTML = 'Al costo del biglietto verrà sotratta la somma di: ' + sconto.toFixed(2) + ' \u20ac';
+    document.getElementById('sconto').innerHTML = 'Con lo sconto del 40% risparmi: ' + sconto.toFixed(2) + ' \u20ac';
     console.log(sconto);
     var overPrice = ticketPrice - sconto;
     document.getElementById('final_price').innerHTML = 'Il costo finale del biglietto è: ' + overPrice.toFixed(2) + ' \u20ac';
     console.log(overPrice);
     var result;
-    document.getElementById('result').innerHTML = 'il prezzo è ' + overPrice.toFixed(2) + ' \u20ac';
+    document.getElementById('result').innerHTML = 'Il prezzo è ' + overPrice.toFixed(2) + ' \u20ac';
 }
