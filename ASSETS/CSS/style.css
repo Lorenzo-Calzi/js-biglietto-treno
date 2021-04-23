@@ -1,0 +1,47 @@
+.container{
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(180deg, #200543 0%, #662A8B 99.99%);
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+    padding: 20px;
+}
+.container span{
+    display: block;
+}
+.title h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+.content h2{
+    font-size: 30px;
+}
+.content span{
+    font-size: 20px;
+}
+.user_data{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 30px;
+}
+.ticket_price{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 30px; 
+}
+#result{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 38px;
+}
+
+

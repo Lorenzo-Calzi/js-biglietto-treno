@@ -1,7 +1,7 @@
 // Chiedere all'utente il numero di chilometri che vuole percorrere 
 var kilometers = parseInt(prompt('Inserire il numero di chilometri da percorrere'));
 console.log(kilometers);
-document.getElementById('distance').innerHTML = 'Numero di chilometri da percorrere: ' + kilometers;
+document.getElementById('distance').innerHTML = 'Numero di chilometri da percorrere: ' + kilometers + ' Km';
 
 if (isNaN(kilometers)) {
     alert('Il valore inserito non è valido! Inserire un numero.')
@@ -22,18 +22,27 @@ if (isNaN(userAge)) {
 var priceForKm = 0.21;
 var ticketPrice = kilometers * priceForKm;
 console.log(ticketPrice);
-document.getElementById('price').innerHTML = 'Costo del biglietto: ' + ticketPrice;
+document.getElementById('price').innerHTML = 'Il costo del biglietto è: ' + ticketPrice.toFixed(2) + ' \u20ac';
+var result;
+document.getElementById('result').innerHTML = 'Il prezzo è ' + ticketPrice.toFixed(2) + ' \u20ac';
 
 if (userAge < 18 ) {
     var sconto = (ticketPrice*20)/100;
+    document.getElementById('sconto').innerHTML = 'Al costo del biglietto verrà sotratta la somma di: ' + sconto.toFixed(2) + ' \u20ac';
     console.log(sconto);
     var teenPrice = ticketPrice - sconto;
+    document.getElementById('final_price').innerHTML = 'Il costo finale del biglietto è: ' + teenPrice.toFixed(2) + ' \u20ac';
     console.log(teenPrice);
+    var result;
+    document.getElementById('result').innerHTML = 'Il prezzo è ' + teenPrice.toFixed(2) + ' \u20ac';
 
 } else if (userAge >= 65) {
-    var sconto = (ticketPrice*20)/100;
+    var sconto = (ticketPrice*40)/100;
+    document.getElementById('sconto').innerHTML = 'Al costo del biglietto verrà sotratta la somma di: ' + sconto.toFixed(2) + ' \u20ac';
     console.log(sconto);
     var overPrice = ticketPrice - sconto;
+    document.getElementById('final_price').innerHTML = 'Il costo finale del biglietto è: ' + overPrice.toFixed(2) + ' \u20ac';
     console.log(overPrice);
+    var result;
+    document.getElementById('result').innerHTML = 'il prezzo è ' + overPrice.toFixed(2) + ' \u20ac';
 }
-
